@@ -87,6 +87,23 @@
 	color: #0c0;
 }
 
+
+.captureBtnWrap .captureBtn[data-role="reSampling"] {
+	gap: 10px;
+}
+
+.captureBtnWrap .captureBtn[data-role="reSampling"] .chk {
+	background: #fff 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	outline: 2px solid black;
+}
+
+.captureBtnWrap .captureBtn[data-role="reSampling"].on .chk {
+	background-color: #ff00ff;
+}
+
+
 .captureBtnWrap .printBtn1 {}
 
 .captureBtnWrap .printBtn2 {}

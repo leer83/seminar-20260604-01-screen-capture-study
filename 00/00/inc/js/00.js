@@ -49,7 +49,7 @@ function contentScript(_idx, _page) {
 const isApp = false;
 
 // 캔버스를 활용해서 scale로 고해상도 확대된 데이터를 1:1로 저장할지 여부
-const isUseCanvas = false;
+let isUseCanvas = false;
 
 let $userInputs;
 let $captureWrap;
@@ -95,6 +95,15 @@ function run() {
         switch ($captureBtn.attr('data-role')) {
             case 'capture':
                 capture_toPng();
+                break;
+            case 'reSampling':
+                $(this).toggleClass('on');
+                if ($(this).hasClass('on') === true) {
+                    isUseCanvas = true;
+                }
+                else {
+                    isUseCanvas = false;
+                }
                 break;
         }
     });
