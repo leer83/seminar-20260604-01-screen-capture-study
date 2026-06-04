@@ -298,7 +298,7 @@ function capture_toPng() {
 
     hideInputPlaceholder();
     applyIframeBgColor();
-    // applyVideoPoster();
+    applyVideoPoster();
 
 
     let target = $captureWrap[0];
@@ -355,7 +355,7 @@ function capture_toPng() {
 
                 restoreInputPlaceholder();
                 restoreIframeBgColor();
-                // restoreVideoPoster();
+                restoreVideoPoster();
 
                 // 앱(WebView/Hybrid App)에서 네이티브 브릿지로 순수 Base64 추출해서 전달
                 if (isApp === true) {
