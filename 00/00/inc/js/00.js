@@ -297,7 +297,7 @@ pixelRatio = DOM 그대로 + 출력 해상도만 증가 (시각적 확대 X)
 function capture_toPng() {
 
     hideInputPlaceholder();
-    // applyIframeBgColor();
+    applyIframeBgColor();
     // applyVideoPoster();
 
 
@@ -354,7 +354,7 @@ function capture_toPng() {
                 console.log('캡쳐 성공');
 
                 restoreInputPlaceholder();
-                // restoreIframeBgColor();
+                restoreIframeBgColor();
                 // restoreVideoPoster();
 
                 // 앱(WebView/Hybrid App)에서 네이티브 브릿지로 순수 Base64 추출해서 전달
