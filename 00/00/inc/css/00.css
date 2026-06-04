@@ -1,0 +1,780 @@
+﻿/* jQuery v3.2 이상 에서만 조작 가능 */
+/* https://wit.nts-corp.com/2017/06/27/4731 */
+/* https://inpa.tistory.com/entry/CSS-📚-CSS용-변수-variable-정리 */
+/* $(':root').css({ '--main-bg-color': 'yellow' }); */
+/* const root = document.documentElement; root.style.setProperty('--main-bg-color', 'yellow'); */
+/* h1 { var(--main-bg-color); } */
+:root {
+	--main-bg-color: brown;
+}
+
+#wrap {
+	/* background: none !important; */
+	/* outline: 1px solid red; */
+}
+
+/* 가이드 */
+.tt {
+	/* background: url(../images/00/tt.png) 0 0 no-repeat; */
+}
+
+.setContent {}
+
+.setContent li {}
+
+.setContent li:nth-child(2) {}
+
+
+/* contents:nth-child(1) -------------------------------------------------------------*/
+.contents:nth-child(1) {
+	background: url('../images/00/bg_temp.png') center bottom no-repeat;
+}
+
+.contents:nth-child(2) {
+	background: url('../images/00/bg_temp.png') center bottom no-repeat;
+}
+
+/* contents:nth-child(2) -------------------------------------------------------------*/
+
+/* contents:nth-child(3) -------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+
+.captureWrap {
+	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border: 10px solid darkcyan;
+}
+
+.captureWrap * {
+	font-size: 20px !important;
+	line-height: 20px !important;
+	font-family: 'goyang' !important;
+}
+
+.test2 .captureWrap * {
+	outline: none !important;
+}
+
+
+
+
+.captureBtnWrap {
+	position: absolute;
+	left: 100px;
+	top: 20px;
+	display: flex;
+	gap: 20px;
+}
+
+.captureBtnWrap .captureBtn {
+	background: #eee 0 0 no-repeat;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.captureBtnWrap .captureBtn:active {
+	background: #c0c 0 0 no-repeat;
+	color: #0c0;
+}
+
+.captureBtnWrap .printBtn1 {}
+
+.captureBtnWrap .printBtn2 {}
+
+.captureBtnWrap .printBtn3 {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.captureWrap .txtWrap {
+	background: #ccc;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	padding: 20px;
+}
+
+.captureWrap .txtWrap .txt {
+	margin: 10px 0 0 0;
+}
+
+.captureWrap .txtWrap .txt1 {
+	margin-top: 0;
+}
+
+.captureWrap .txtWrap .txt2 {}
+
+.captureWrap .txtWrap .txt3 {}
+
+.captureWrap .txtWrap .word {
+	background: #aaa 0 0 no-repeat;
+	color: #c00;
+}
+
+.captureWrap .txtWrap .word1 {}
+
+.captureWrap .txtWrap .word2 {}
+
+.captureWrap .txtWrap .word3 {}
+
+
+
+
+
+.captureWrap .boxWrap {
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.captureWrap .boxWrap .box {
+	position: static;
+	left: auto;
+	top: auto;
+}
+
+.captureWrap .boxWrap .box1 {
+	background: rgba(255, 0, 0, 0.6);
+	position: relative;
+}
+
+.captureWrap .boxWrap .box1::before,
+.captureWrap .boxWrap .box1::after {
+	background: rgba(0, 255, 255, 0.3) 0 0 no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: -40px;
+	top: -40px;
+	content: '';
+	border-radius: 50%;
+}
+
+.captureWrap .boxWrap .box1::after {
+	background: rgba(0, 255, 255, 0.7) 0 0 no-repeat;
+	left: auto;
+	right: -40px;
+}
+
+.captureWrap .boxWrap .box2 {
+	background: rgba(0, 255, 0, 0.6);
+	width: 150px;
+	height: 150px;
+}
+
+.captureWrap .boxWrap .box3 {
+	background: rgba(0, 0, 255, 0.6);
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
+
+.captureWrap .btnWrap {
+	background: #eee 0 0 no-repeat;
+	position: absolute;
+	left: 1000px;
+	top: 200px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.captureWrap .btnWrap .btn {
+	background: #c00 0 0 no-repeat;
+	padding: 10px;
+	color: #fff;
+}
+
+.captureWrap .btnWrap .btn1 {}
+
+.captureWrap .btnWrap .btn2 {
+	background: #0c0 0 0 no-repeat;
+}
+
+.captureWrap .btnWrap .btn3 {
+	background: #00c 0 0 no-repeat;
+}
+
+
+
+
+
+.captureWrap .imgWrap {
+	position: absolute;
+	left: 50px;
+	top: 600px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	gap: 50px;
+	transform-origin: 0 0;
+	transform: scale(0.6);
+}
+
+.captureWrap .imgWrap .img {
+	box-sizing: content-box;
+	outline: 10px solid black !important;
+}
+
+.captureWrap .imgWrap .img1 {}
+
+.captureWrap .imgWrap .img2 {}
+
+.captureWrap .imgWrap .img3 {}
+
+
+
+
+
+.captureWrap .imgDivWrap {
+	position: absolute;
+	left: 950px;
+	top: 600px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	gap: 50px;
+	transform-origin: 0 0;
+	transform: scale(0.6);
+}
+
+.captureWrap .imgDivWrap .imgDiv {
+	background: url('../images/00/200x200.jpg') 0 0 no-repeat;
+	width: 200px;
+	height: 200px;
+	box-sizing: content-box;
+	outline: 10px solid #666 !important;
+}
+
+.captureWrap .imgDivWrap .imgDiv1 {}
+
+.captureWrap .imgDivWrap .imgDiv2 {
+	background: url('../images/00/400x400.jpg') 0 0 no-repeat;
+	width: 400px;
+	height: 400px;
+}
+
+.captureWrap .imgDivWrap .imgDiv3 {
+	background: url('../images/00/600x600.jpg') 0 0 no-repeat;
+	width: 600px;
+	height: 600px;
+}
+
+
+
+
+
+
+.captureWrap .iframeWrap {
+	background-color: rgba(230, 230, 230, 0.3);
+	position: absolute;
+	left: 1380px;
+	top: 130px;
+}
+
+.captureWrap .iframeWrap iframe {}
+
+
+
+
+
+
+/* textContent */
+.contents .textContent .wrapper {
+	background-color: rgba(238, 238, 238, 1);
+	left: 100px;
+	top: 310px;
+	/* top: 432px; */
+	width: 600px;
+	height: 200px;
+	outline: 1px solid black !important;
+}
+
+.contents .textContent .inputWrap {
+	left: 740px;
+	height: 107px;
+}
+
+.contents .textContent .wrapper input,
+.contents .textContent .wrapper textarea {
+	background: #fff;
+	/* padding: 12px 24px; */
+	/* padding: 8px 24px 5px; */
+	font-size: 52px !important;
+	line-height: 1 !important;
+}
+
+.contents .textContent .wrapper input {
+	/* padding: 5px 18px 0 18px; */
+	/* font-size: 44px; */
+	/* text-align: center; */
+	/* text-indent: 10px; */
+}
+
+.contents .textContent .wrapper:nth-child(2) input {}
+
+.contents .textContent .wrapper:nth-child(3) input {}
+
+
+.contents .textContent .wrapper .placeholder {
+	/* background: url(../../../common/images/sci/textitem/placeholder_chapter.png) 26px 18px no-repeat; */
+	background: url(../images/00/placeholder_input.png) 26px 18px no-repeat;
+	/* background-position: 21px 8px; */
+}
+
+.contents .textContent .wrapper.hide-placeholder .placeholder {
+	display: none;
+}
+
+.contents .textContent .wrapper:nth-child(2) {}
+
+.contents .textContent .wrapper:nth-child(3) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ──────────────────────────────────────────────────────
+* Video
+/* ────────────────────────────────────────────────────── */
+
+.videoWrap {
+	position: absolute;
+	left: 1100px;
+	top: 190px;
+}
+
+/* common */
+.videoFrame .vdo-wrap .play {
+	background: url('../../../../common/images/sci/video/playbtn_big.png') 0 0 no-repeat;
+	width: 200px;
+	height: 200px;
+	top: calc(50% - 134px);
+	left: calc(50% - 100px);
+}
+
+.videoFrame .control-wrap .c-con .progress span {
+	background: #47BFC6;
+}
+
+.videoFrame .control-wrap .c-con .progress span:before {
+	background: url('../../../../common/images/sci/video/jog.png') 0 0 no-repeat;
+	width: 60px;
+	height: 60px;
+}
+
+.videoFrame .markerbox .marker {
+	background: url('../../../../common/images/sci/video/marker.png') 0 0 no-repeat;
+	width: 17px;
+	height: 16px;
+	top: -12px;
+	/* margin-left: 30px; */
+	/* cursor: pointer; */
+}
+
+.videoFrame .control-wrap .c-con .time {
+	right: -16px;
+}
+
+.videoFrame .control-wrap .c-con .time .currentTime,
+.videoFrame .control-wrap .c-con .time .totalTime {
+	display: inline-block;
+	font-size: 17px;
+}
+
+.videoFrame .control-wrap .c-con .time .currentTime {
+	color: #FFE474;
+	letter-spacing: 0.0px;
+}
+
+.videoFrame .control-wrap .c-con .time .totalTime {
+	margin-right: -6px;
+}
+
+.videoFrame .control-wrap .c-con .time .totalTime:before {
+	top: 0px;
+	left: 50px;
+}
+
+
+.videoFrame .r-con .r-btn {
+	background-color: #47BFC6;
+}
+
+.videoFrame .r-box div.on {
+	background-color: #47BFC6;
+}
+
+.videoFrame .control-wrap .s-con .sound span {
+	background-color: #47BFC6;
+}
+
+/* 책갈피 기능 삭제 */
+.videoFrame .tabbox .tab .rolemode {
+	display: none;
+}
+
+/* 비디오 - 인트로 */
+.videoFrame.intro {
+	left: 899px;
+	top: 130px;
+	transform-origin: left top;
+	transform: scale(0.707);
+}
+
+
+/* 비디오 - 생각 열기 */
+.videoFrame.think,
+.videoFrame.concept {
+	top: 270px;
+	transform: translateX(-50%) scale(1.01);
+	top: 0px;
+	transform: translateX(-50%) scale(0.36);
+}
+
+/* 2줄 */
+.videoFrame.think.line2,
+.videoFrame.concept.line2 {
+	top: 206px;
+}
+
+/* 비디오 - 탐구 안내 */
+.videoFrame.research {
+	top: 182px;
+	transform: translateX(-50%) scale(1.01);
+}
+
+/* 비디오 - 정리 콕콕 */
+.videoFrame.review {
+	top: 170px;
+	transform: translateX(-50%) scale(1.01);
+}
+
+/* 비디오 - 팝업(풀) */
+.popup .videoFrame {
+	top: 132px;
+	transform: translateX(-50%) scale(1.146);
+}
+
+/* 비디오 - 다음시간에는 */
+.videoFrame.last {
+	width: 465px;
+	height: 842px;
+	top: 71px;
+	left: 1568px;
+	/* transform: translateX(-50%) scale(1); */
+}
+
+.videoFrame.last .vdo-wrap .play {
+	background: url('../../../../common/images/sci/video/playbtn_big_last.png') 0 0 no-repeat;
+	width: 184px;
+	height: 184px;
+	top: calc(50% - 91px);
+	left: calc(50% - 93px);
+}
+
+/* 비디오 - 다음시간에는 커버 */
+#wrap.last .videoCover {
+	background: url('../../../../common/images/sci/video/last_cover.png') 0 0 no-repeat;
+	width: 722px;
+	height: 875px;
+	position: absolute;
+	left: 1176px;
+	top: 58px;
+	z-index: 3;
+	pointer-events: none;
+}
+
+/* 마지막 페이지 hls 영상 관련 제어 */
+#wrap.last .levelbuttons {
+	display: none;
+}
+
+#wrap.last .hls.videoFrame .control-wrap .p-con {
+	left: 19px;
+}
+
+#wrap.last .hls.videoFrame .control-wrap .f-con {
+	right: 17px;
+}
+
+
+
+
+
+
+
+
+
+/*! 홍보차시용 */
+/* .videoFrame.last {
+    display: none !important;
+} */
+
+/** 3, 4학년은 페이지 css에 직접 코딩됨 */
+/* #wrap.last .videoCover {
+    background: url('../../../../common/images/sci/video/last_cover_temp_g3.png') 0 0 no-repeat;
+    background: url('../../../../common/images/sci/video/last_cover_temp_g4.png') 0 0 no-repeat;
+    width: 595px;
+    height: 1021px;
+    left: 1182px;
+    top: 0px;
+} */
+
+/* #wrap:not(.fullMode) .videoFrame.last::after {
+    background: url('../../../../common/images/sci/video/last_cover.png') 0 0 no-repeat;
+    width: 595px;
+    height: 1021px;
+    position: absolute;
+    left: -19px;
+    top: -55px;
+    content: '';
+    pointer-events: none;
+    z-index: 1;
+}
+ */
+
+/*
+:-ms-fullscreen
+:-moz-full-screen
+:-webkit-full-screen
+:fullscreen
+*/
+/* .videoFrame.last:not(:-ms-fullscreen) .control-wrap .stop,
+.videoFrame.last:not(:-moz-full-screen) .control-wrap .stop,
+.videoFrame.last:not(:-webkit-full-screen) .control-wrap .stop,
+.videoFrame.last:not(:fullscreen) .control-wrap .stop {
+    display: none;
+} */
+/*.videoFrame.last:not(:-ms-fullscreen):not(:-moz-full-screen):not(:-webkit-full-screen):not(:fullscreen) .control-wrap .stop,*/
+#wrap:not(.fullMode) .videoFrame.last .stop,
+#wrap:not(.fullMode) .videoFrame.last .replay,
+#wrap:not(.fullMode) .videoFrame.last .r-con,
+#wrap:not(.fullMode) .videoFrame.last .s-con,
+#wrap:not(.fullMode) .videoFrame.last .c-con {
+	display: none;
+}
+
+
+#wrap:not(.fullMode) .videoFrame.last video {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#wrap:not(.fullMode) .videoFrame.last .control-wrap {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* 비디오 - tp1 */
+.videoFrame.tp1 {}
+
+/* 비디오 - tp2 */
+.videoFrame.tp1 {}
+
+/* 비디오 - tp3 */
+.videoFrame.tp1 {}
+
+/* 탭 */
+/*
+.videoFrame.research .tabbox {
+    left: -213px;
+}
+
+.videoFrame.research .tabbox .tab {
+    background: url('../../../../common/images/sci/video/tab_research.png') 0 0 no-repeat;
+    width: 218px;
+    height: 90px;
+    position: relative;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-top: 9px;
+    padding-left: 41px;
+    padding-right: 4px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    font-size: 58px;
+    color: #fff;
+    letter-spacing: 0.0px;
+    line-height: 52px;
+    min-height: 76px;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.videoFrame.research .tabbox .tab .no {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    min-height: inherit;
+    letter-spacing: 0;
+}
+
+.videoFrame.research .tabbox .tab.on {
+    background: url('../images/sci/video/tab_research_on.png') 0 0 no-repeat;
+}
+
+.videoFrame.research .tabbox .tab:nth-child(1) {
+    margin-top: 56px;
+}
+*/
+
+
+
+/* videoFrame hls */
+.levelbuttons {
+	display: none;
+}
+
+.hls .levelbuttons {
+	position: absolute;
+	top: 8px;
+	right: 65px;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	background: #6f7278;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 120px;
+}
+
+.hls .levelbuttons button {
+	width: 94px;
+	height: 28px;
+	cursor: pointer;
+	box-sizing: content-box;
+	border-radius: 20px;
+	color: #4D4D4D;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	background: rgb(203, 203, 203);
+	position: relative;
+	/* margin-top: 10px; */
+	margin-top: 12px;
+	margin-left: 2px;
+	display: none;
+	white-space: nowrap;
+}
+
+.hls .levelbuttons button.on {
+	/* background: #9BE8CA; */
+	background: #47BFC6;
+	display: block;
+	font-size: 18px;
+}
+
+.hls .levelbuttons button span {
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.hls .levelbuttons.open {
+	top: -188px;
+	padding-top: 14px;
+}
+
+.hls .levelbuttons.open div {
+	font-size: 22px;
+	color: #fff;
+	letter-spacing: -1px;
+}
+
+.hls .levelbuttons.open button {
+	display: block;
+}
+
+.hls.videoFrame .control-wrap .p-con {
+	left: 10px;
+}
+
+.hls.videoFrame .control-wrap .stop {
+	left: 85px;
+}
+
+.hls.videoFrame .control-wrap .replay {
+	left: 145px;
+}
+
+.hls.videoFrame .control-wrap .c-con {
+	left: 210px;
+	width: calc(100% - 720px);
+}
+
+.hls.videoFrame .control-wrap .c-con:before {
+	left: -4px;
+	display: none;
+}
+
+.hls.videoFrame .r-con {
+	right: 470px;
+}
+
+.hls.videoFrame .r-con:before {
+	left: -10px;
+	display: none;
+}
+
+.hls.videoFrame .control-wrap .s-con {
+	right: 320px;
+}
+
+.hls.videoFrame .control-wrap .s-con::before {
+	display: none;
+}
+
+.hls.videoFrame .control-wrap .f-con {
+	right: 5px;
+}
+
+.hls.videoFrame .control-wrap .f-con:before {
+	border: 0;
+}

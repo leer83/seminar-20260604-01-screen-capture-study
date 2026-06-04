@@ -1,0 +1,346 @@
+/* 가이드 */
+.tt {
+    background-image: url(../images/07/tt/tt1.png) !important;
+}
+
+.setContent {}
+
+.setContent li {}
+
+.setContent li:nth-child(2) {}
+
+.setContent li:nth-child(3) {}
+
+.setContent li:nth-child(4) {}
+
+
+/* contents */
+.contents:nth-child(1){
+    /* background: url(../images/07/1.png) 0 0 no-repeat; */
+    /* background: url(../images/07/3.png) 0 0 no-repeat; */
+}
+
+.contents:nth-child(1) .title.top{
+    z-index: 1;
+}
+
+.contents:nth-child(1) .title .img {
+    position: absolute;
+    background: url(../images/07/title.png) 0 0 no-repeat;
+    width: 1741px;
+    height: 85px;
+    top: 16px;
+    left: -8px;
+}
+
+.contents:nth-child(1) .title .text{
+    padding-left: 239px;
+    position: relative;
+}
+
+.contents:nth-child(1) .contentbox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contents:nth-child(1) .listbox {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+}
+
+.contents:nth-child(1) .list {
+    /* position: static; */
+    /* left: auto; */
+    /* top: auto; */
+    /* display: flex; */
+    /* margin-left: 30px; */
+    top: 84px;
+    right: 60px;
+    z-index: 1;
+}
+
+.contents:nth-child(1) .list li {
+    background: url(../images/07/top.png) 0 0 no-repeat;
+    width: 83px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 8px;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.contents:nth-child(1) .list li:first-child {
+    margin-left: 0;
+}
+
+.contents:nth-child(1) .list li.on {
+    background: url(../images/07/top_on.png) 0 0 no-repeat;
+    /* color: #FFF; */
+    /* text-shadow: 0px 2px 0px rgb(0 0 0 / 30%); */
+}
+
+.contents:nth-child(1) .listbox .textbox {
+    background: url(../images/07/box.png) 0 0 no-repeat;
+    width: 1684px;
+    height: 736px;
+    display: flex;
+}
+
+.contents:nth-child(1) .listbox .textbox .img {
+    background: url(../images/07/img.png) 0 0 no-repeat;
+    width: 730px;
+    height: 657px;
+    margin-top: 77px;
+    margin-left: 10px;
+}
+
+.contents:nth-child(1) .listbox .textbox .textlist {
+    margin-top: 296px;
+    margin-left: 75px;
+}
+
+.contents:nth-child(1) .listbox .textbox .textlist li {
+    position: relative;
+    margin-left: 20px;
+    font-size: 55px;
+    margin-bottom: 55px;
+}
+
+.contents:nth-child(1) .listbox .textbox .textlist li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 15px;
+    left: -46px;
+    background-color: #ae71d1;
+}
+
+.flower_bull{
+    position: absolute;
+    top: 180px;
+    font-size: 55px;
+    line-height: 77px;
+    top: 136px;
+    left: 35px;
+    padding: 0 60px 0 45px;
+    word-break: keep-all;
+}
+
+.flower_bull::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../images/07/bull_f.png) 0 0 no-repeat;
+    width: 24px;
+    height: 24px;
+    top: 22px;
+    left: 0;
+}
+
+.num_title{
+    background: url(../images/07/bx_title.png) 0 0 no-repeat;
+    width: 587px;
+    height: 69px;
+    position: absolute;
+    top: 129px;
+    left: 34px;
+}
+
+.icon_num1{
+    background: url(../images/07/bx_num1.png) 0 0 no-repeat;
+    width: 37px;
+    height: 74px;
+    position: absolute;
+    top: -6px;
+    left: -5px;
+}
+
+.num_title .title{
+    color: #5b2700;
+    font-size: 45px;
+    line-height: 55px;
+    padding-left: 33px;
+    letter-spacing: -0.5px;
+}
+
+.sub_text{
+    position: absolute;
+    font-size: 55px;
+    line-height: 90px;
+    top: 211px;
+    left: 80px;
+}
+
+.textBox{
+    border: 2px solid #dd7aac;
+    position: absolute;
+    top: 311px;
+    left: 80px;
+    width: 1600px;
+    height: 530px;
+    border-radius: 30px;
+}
+
+.textBox .top_text{
+    font-size: 48px;
+    line-height: 52px;
+    color: #fff;
+    background: #dd7aac;
+    width: 124px;
+    height: 61px;
+    position: absolute;
+    top: 27px;
+    left: 43px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 68px;
+}
+
+.textBox ul{
+    position: absolute;
+    top: 109px;
+    left: 43px;
+}
+
+.textBox ul li{
+    font-size: 55px;
+    line-height: 77px;
+    word-break: keep-all;
+    padding-left: 34px;
+    position: relative;
+    margin-bottom: 33px;
+}
+
+.textBox ul li::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background: #dd7aac;
+    /* background: #eee; */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 0;
+    top: 29px;
+}
+
+.textBox ul li:last-child{
+
+}
+
+.contents:nth-child(1) .box {
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    top: 312px;
+    left: 80px;
+    padding: 20px 43px;
+    width: 1600px;
+    /* background: #fff; */
+    flex-direction: row;
+}
+
+.contents:nth-child(1) .box .ex {
+    /* font-size: 40px; */
+    /* color: #fff; */
+    /* width: 60px; */
+    /* height: 60px; */
+    /* border-radius: 50%; */
+    /* background-color: #00ADEE; */
+    /* padding: 13px 0 0 10px; */
+    margin-right: 21px;
+    margin-top: 5px;
+    /* position: relative; */
+    /* float: left; */
+}
+
+.contents:nth-child(1) .box .text {
+    font-size: 55px;
+    color: #000;
+    line-height: 77px;
+    position: relative;
+    /* left: initial; */
+    /* float: left; */
+    word-break: keep-all;
+    color: #0059b8;
+    width: 1390px;
+}
+
+.clickContent .clickItem.clickItem1 {
+    top: 317px;
+    left: 85px;
+    height: 178px;
+    width: 1588px;
+    background-color: #EFEFEF;
+    /* background: red; */
+}
+
+
+
+/**/
+.navigation .pageing{
+    background: #fee2a9 0 0 no-repeat;
+    display: flex;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 34px;
+    left: 50%;
+    padding: 10px 26px;
+    border-radius: 23px;
+    transform: translate(-50%, 0);
+
+    display: none;
+}
+
+.navigation .pageing div {
+    background: url(../../../common/images/naviitem/btmbul.png) 0px 0 no-repeat;
+    width: 28px;
+    height: 28px;
+    /* display: flex; */
+    /* align-items: flex-start; */
+    /* padding: 0 0 0 25px; */
+    margin-right: 16px;
+    /* cursor: auto;
+    pointer-events: none; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navigation .pageing div:last-child {
+    margin-right: 0px;
+}
+
+.navigation .pageing div.on {
+    background: none;
+    position: relative;
+    pointer-events: none;
+}
+
+.navigation .pageing div.on::before {
+    background: url(../../../common/images/naviitem/btmbul_on.png) 0 0 no-repeat;
+    width: 28px;
+    height: 31px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: '';
+    display: block;
+}
+
+.navigation .pageing div .text{
+    display: none;
+}

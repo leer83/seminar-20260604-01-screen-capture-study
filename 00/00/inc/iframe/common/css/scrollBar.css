@@ -1,0 +1,186 @@
+.c-con,
+.c-con.hor.rmax{
+	left: 0px;
+	top: -150px;
+	position: absolute;
+}
+.c-con.hor.lmax{
+	left: 100px;
+	top: 300px;
+}
+.c-con.ver.tmax{
+	left: 100px;
+	top: 500px;
+}
+.c-con.ver.bmax{
+	left: 600px;
+	top: -100px;
+}
+
+
+.c-con .progress,
+.c-con.hor.rmax .progress{
+	left: 0;
+	top: 100px;
+	position: absolute;
+	width: 400px;
+	height: 10px;
+	background-color: #4D4D4D;
+	border-radius: 0px;
+	cursor: pointer;
+}
+.c-con.hor.lmax .progress{
+	left: 0;
+	top: 100px;
+	width: 400px;
+	height: 10px;
+}
+.c-con.ver.tmax .progress{
+	left: 0;
+	top: 100px;
+	width: 10px;
+	height: 400px;
+}
+.c-con.ver.bmax .progress{
+	left: 0;
+	top: 100px;
+	width: 10px;
+	height: 400px;
+}
+
+
+.c-con .wraptxt span{
+	position: absolute;
+	display: block;
+	user-select: none;
+	font-size: 20px;
+}
+.c-con .wraptxt span.max{
+	right: 0px;
+	top: 15px;
+}
+.c-con .wraptxt span.min{
+	left: 0px;
+	top: 15px;
+}
+.c-con.hor.lmax .wraptxt span.max{
+	left: 0px;
+	right: auto;
+	top: 15px;
+}
+.c-con.hor.lmax .wraptxt span.min{
+	left: auto;
+	right: 0px;
+	top: 15px;
+}
+.c-con.ver.tmax .wraptxt span.max{
+	left: 15px;
+	right: auto;
+	top: 0px;
+	bottom: auto;
+}
+.c-con.ver.tmax .wraptxt span.min{
+	left: 15px;
+	right: auto;
+	top: auto;
+	bottom: 0px;
+}
+.c-con.ver.bmax .wraptxt span.max{
+	left: 15px;
+	right: auto;
+	top: auto;
+	bottom: 0px;
+}
+.c-con.ver.bmax .wraptxt span.min{
+	left: 15px;
+	right: auto;
+	top: 0;
+	bottom: auto;
+}
+
+
+
+
+.c-con .progress span.ctrl,
+.c-con.hor.rmax .progress span.ctrl{
+	left: 0;
+	right: auto;
+	top: 0;
+	bottom: auto;
+	display: block;
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background: #85d0f9;
+	border-radius: 0px;
+	user-select: none;
+}
+.c-con.hor.lmax .progress span.ctrl{
+	left: auto;
+	right: 0;
+}
+.c-con.ver.tmax .progress span.ctrl{
+	left: 0;
+	right: auto;
+	top: auto;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+}
+.c-con.ver.bmax .progress span.ctrl{
+	left: 0;
+	right: auto;
+	top: 0;
+	bottom: auto;
+	width: 100%;
+	height: 0;
+}
+
+
+.c-con .progress span.ctrl:before,
+.c-con.hor.rmax .progress span.ctrl:before{
+	left: auto;
+	right: -31px;
+	top: -28px;
+	bottom: auto;
+	display: block;
+	content: '';
+	position: absolute;
+	width: 62px;
+	height: 62px;
+	background: url('../../images/video/jog.png') 0 0 no-repeat;
+	opacity: 0.5;
+}
+.c-con.hor.lmax .progress span.ctrl:before{
+	left: -31px;
+	right: auto;
+}
+.c-con.ver.tmax .progress span.ctrl:before{
+	left: auto;
+	right: -24px;
+	top: -31px;
+	bottom: auto;
+}
+.c-con.ver.bmax .progress span.ctrl:before{
+	left: auto;
+	right: -24px;
+	top: auto;
+	bottom: -31px;
+}
+
+.c-con .time{
+    left: 460px;
+    top: 90px;
+	position: absolute;
+	width: 120px;
+}
+.c-con .time .currentTime{
+    width: 500px;
+	user-select: none;
+    font-size: 36px;
+    font-weight: bold;
+    color: #cc0000;
+}
+.c-con.ver .time{
+	left: 100px;
+}

@@ -1,0 +1,856 @@
+/* ───────────────────────────────────────────────────────┐
+ * file name : custom.css
+ * description : YBM 실과 5,6학년 main.html 용 CSS모음
+ * create date : 2025-06-10 16:01:47
+ * creator : JGY
+ * modify:
+ * usage:
+└────────────────────────────────────────────────────── */
+
+/* ──────────────────────────────────────────────────────
+* FONT
+/* ────────────────────────────────────────────────────── */
+
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-style: normal;
+    src: local('※'), url('Pretendard-Light.woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    src: local('※'), url('Pretendard-Medium.woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-style: normal;
+    src: local('※'), url('Pretendard-Bold.woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-style: normal;
+    src: local('※'), url('Pretendard-ExtraBold.woff');
+}
+
+@font-face {
+    font-family: 'Katuri';
+    font-weight: 600;
+    font-style: normal;
+    src: local('※'), url('Katuri.woff');
+}
+
+/* ──────────────────────────────────────────────────────
+* COMMON
+/* ────────────────────────────────────────────────────── */
+
+
+
+html {
+    background-color: #fff;
+}
+
+main {
+    background-color: #fff;
+}
+
+nav {
+    background: url(../images/custom/navbg.png);
+    color: #333;
+    grid-template-columns: 116px auto 340px 120px;
+}
+
+.frame_wrap {
+    /* box-shadow: 0 10px 20px 0 rgba(128, 128, 128, 0.5) */
+}
+
+nav .bars {
+    background-color: #27ACB3;
+}
+
+.icon2 path {
+    /* fill: #fff; */
+    stroke: #006F9A;
+}
+
+.icon3 path {
+    fill: #006F9A;
+    stroke: #006F9A;
+}
+
+.icon4 path {
+    fill: #006F9A;
+}
+
+.main_btn>.next {
+    background: url(../images/custom/narrow_on.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 101px;
+    right: -48px;
+    top: 50%;
+}
+
+.main_btn>.prev {
+    background: url(../images/custom/parrow_on.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 101px;
+    left: -48px;
+    top: 50%;
+}
+
+.next.moveBtn.off {
+    opacity: 1;
+    background: url(../images/custom/narrow.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.prev.moveBtn.off.off {
+    opacity: 1;
+    background: url(../images/custom/parrow.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.navTitle[data-select="box"] .SelectBox {
+    background-color: #eee;
+    color: #383838;
+    width: 600px;
+}
+
+.navTitle[data-select="box"] .SelectBox>div {
+    border: 0;
+}
+
+nav .SelectBox>div {
+    color: #999;
+}
+
+.navTitle[data-select="box"] .SelectBox.on>div {
+    background-color: #eee;
+}
+
+.navTitle[data-select="box"] .SelectBox>div>div:where(:hover, .on) {
+    color: #006F9A;
+    background-color: transparent;
+}
+
+.swallow_icon:before,
+.swallow_icon:after {
+    background-color: #333;
+}
+
+.frame {
+    margin-left: 50px;
+}
+
+.frame_wrap {
+    box-shadow: 0 10px 20px 0 rgba(128, 128, 128, 0.5)
+}
+
+figure {
+    width: calc(100%);
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    overflow: hidden;
+}
+
+article.navMain {
+    border-radius: 0;
+}
+
+.dot_tab.on {
+    display: none !important;
+}
+
+.boardbtn {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background: #006F9A;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.sort_foot {
+    right: 3px;
+}
+
+.lessonOver>p>span:after {
+    display: none;
+}
+
+.nav_ul ul>li.lessonOver:after {
+    display: none;
+}
+
+.lessonOver>p>span {
+    display: block;
+    background: url(../images/custom/btitle1.png);
+    width: 95px;
+    height: 68px;
+    top: -7px;
+    left: -10px;
+}
+
+#L1.lessonOver>p>span {
+    background: url(../images/custom/btitle1.png);
+}
+
+#L2.lessonOver>p>span {
+    background: url(../images/custom/btitle2.png);
+}
+
+#L3.lessonOver>p>span {
+    background: url(../images/custom/btitle3.png);
+}
+
+#L4.lessonOver>p>span {
+    background: url(../images/custom/btitle4.png);
+}
+
+#L5.lessonOver>p>span {
+    background: url(../images/custom/btitle5.png);
+}
+
+/* --------------------------------------------------------- */
+.navMain {}
+
+.nav_ul {
+    grid-template-columns: 735px auto;
+}
+
+article.navMain figure::before {
+    background: none;
+}
+
+.navMain figure>div {
+    background-color: transparent;
+}
+
+.navMain figure .lesson_wrap,
+.navMain figure .corner_wrap {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/* 배경 이미지 */
+article.navMain figure::before {
+    background: url(../images/custom/top_bg.png) center bottom no-repeat;
+}
+
+/* 가이드  */
+.navMain figure::after {
+    background: url(../images/custom/tt1.png) center bottom no-repeat;
+    /* background: url(../images/custom/tt2.png) center bottom no-repeat; */
+    /* background: url(../images/custom/tt3.png) center bottom no-repeat; */
+    /* background: url(../images/custom/tt4.png) center bottom no-repeat; */
+    position: absolute;
+    left: 0px;
+    top: -90px;
+    width: 1920px;
+    height: 1080px;
+    display: none;
+    content: '';
+    opacity: 0.5;
+    pointer-events: none;
+    background-position-x: 0px !important;
+    background-position-y: 0px !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    /* transform: scale(1.2); */
+    z-index: 9999;
+}
+
+.nav_ul ul.cornerList {
+    gap: 5px;
+}
+
+.nav_ul ul.cornerList>li {
+    font-family: 'Pretendard';
+    font-size: 35px;
+    line-height: 34px;
+    font-weight: 800;
+}
+
+.nav_ul ul.cornerList>li .btitle {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+    font-family: 'Pretendard';
+    font-weight: 900;
+    text-align: center;
+    background: url(../images/custom/danwon_c.png) 0 0 repeat-x;
+    margin-left: 30px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+    line-height: 60px;
+    height: 60px;
+    padding: 0 0px;
+    position: relative;
+}
+
+.nav_ul ul.cornerList>li .btitle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -28px;
+    background: url(../images/custom/danwon.png) top left no-repeat;
+    width: 30px;
+    height: 60px;
+}
+
+.nav_ul ul.cornerList>li .btitle:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -28px;
+    background: url(../images/custom/danwon.png) top right no-repeat;
+    width: 30px;
+    height: 60px;
+}
+
+.cornerList li .list_text {
+    color: #0087BC;
+    padding: 17px 3px;
+    letter-spacing: -0.4px;
+}
+
+/*
+.cornerList li .list_text:before {
+    content: attr(data-chasi);
+    background-color: #3853a0;
+    color: #fff;
+    font-family: 'Pretendard';
+    font-size: 35px;
+    font-weight: 800;
+    width: 186px;
+    display: inline-block;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: -3px;
+    padding: 6px 0;
+    letter-spacing: -0.7px;
+}
+*/
+
+.cornerList li:where(.on, .selected, .hover, :hover) .list_text {
+    color: #263c6d;
+}
+
+.cornerList li:where(.on, .selected, .hover, :hover) .list_text:before {
+    color: #FCE98D;
+}
+
+.cornerList li:where(.on, .selected, .hover, :hover) .list_text:after {
+    content: '';
+    display: none;
+    background: url(../images/custom/text_on.png);
+    width: 31px;
+    height: 37px;
+    position: absolute;
+    left: -45px;
+    top: 8px;
+}
+
+.cornerList>li>ul {
+    margin-top: 0;
+}
+
+.cornerList>li>ul>li {
+    font-family: 'Pretendard';
+    font-size: 35px;
+    font-weight: 700;
+    color: #3d3d3d;
+    padding: 18.5px 8px;
+    letter-spacing: 0;
+}
+
+.cornerList>li>ul>li:hover {
+    color: #263c6d;
+}
+
+.cornerList>li>ul>li+li {
+    margin-top: 0;
+}
+
+.cornerList>li>ul>li:before {
+    --w: 8px;
+    left: -8px;
+    top: 31px;
+    background-color: #3d3d3d;
+    border-radius: 0;
+    display: none;
+}
+
+.cornerList>li>ul>li:after {
+    content: '';
+    display: block;
+    /* background: url(../images/custom/under.png); */
+    background: #e0e1e2 0 0 no-repeat;
+    width: 1020px;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: -30px;
+}
+
+.cornerList>li>ul>li:where(:hover, .hover, .on, .selected) {
+    background-color: transparent;
+    color: #263c6d;
+    font-weight: 800;
+}
+
+.cornerList>li>ul>li:where(:hover, .hover, .on, .selected):before {
+    display: none;
+}
+
+.corner_wrap_scroll {
+    width: 950px;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    height: 820px;
+    padding-right: 0;
+    padding-left: 48px;
+}
+
+.nav_ul ul>li.lessonOver.selected:after {
+    display: none;
+}
+
+.lessonOver>p {
+    padding-left: 0;
+    color: #474747;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 800;
+    font-family: 'Katuri';
+    letter-spacing: 0px;
+    padding-left: 95px;
+}
+
+.lessonOver>p>span:before {
+    display: none;
+}
+
+.nav_ul ul>li.js-lessonOver {
+    box-sizing: border-box;
+    width: 570px;
+    height: 82px;
+    margin-left: -12px;
+    margin-bottom: 18px;
+    padding: 18px 12px 15px
+}
+
+.lesson_wrap ul>li.js-lessonOver+li {
+    margin-top: 0;
+}
+
+.nav_ul ul>li.selected {
+    background: url(../images/custom/selected.png) right 0 no-repeat;
+}
+
+.lessonList {
+    position: absolute;
+    left: 148px;
+    top: 180px;
+    width: 586px;
+    height: 750px;
+    overflow-y: scroll;
+    border-radius: 40px;
+}
+
+.lessonList ul {
+    width: 570px;
+    font-size: 43px;
+    background: #f5f7fc;
+    border-radius: 20px;
+    /* box-shadow: 0px -2px 4px #b3b3b3; */
+    padding: 0px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 84px;
+}
+
+.lessonList>ul:before {
+    content: attr(btitle);
+    font-family: 'cookie';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #0f83d4;
+    letter-spacing: -0.5px;
+    position: absolute;
+    top: -55px;
+    left: 15px;
+}
+
+.iconwrap {
+    width: 120px;
+    justify-content: center;
+}
+
+
+.card>ul {
+    width: 220px;
+}
+
+
+
+/* =========================================================================================
+ * PROTO USB 버전
+
+
+.cornerList li .list_text+.page_number+ul+ul {
+    display: block !important;
+}
+
+.cornerList li .list_text:before {
+    color: #ffffff;
+}
+
+.cornerList li .list_text:after {
+    content: '';
+    display: block;
+    background: url(../images/custom/text_on.png) 0 0 no-repeat;
+    width: 31px;
+    height: 37px;
+    position: absolute;
+    left: -49px;
+    top: 23px;
+}
+
+.nav_ul ul.cornerList li .swallow_icon {
+    transform: translateY(-12px);
+}
+
+.nav_ul ul.cornerList li .swallow_icon:before {
+    transform-origin: 100% 0;
+    transform: rotate(-40deg);
+}
+
+.nav_ul ul.cornerList li .swallow_icon:after {
+    transform-origin: 0 0;
+    transform: rotate(40deg);
+}
+
+.nav_ul ul.cornerList>li .swallow_icon:before,
+.nav_ul ul.cornerList>li .swallow_icon:after {
+    background-color: #87c2f6;
+}
+
+
+* ====================================================================================== */
+.pageing_wrap svg {
+    fill: #27acb3;
+}
+
+.pageing>span>span:before {
+    display: none;
+}
+
+.pageing button {
+    background: url(../images/custom/go.png) 0 5px no-repeat;
+    width: 66px;
+    height: 46px;
+}
+
+.pageing button::before {
+    display: none;
+}
+
+.pageing button::after {
+    display: none;
+}
+
+.navTitle[data-select="box"] .SelectBox>p {
+    font-size: 32px;
+    width: calc(100% - 50px);
+    max-width: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navTitle[data-select="box"] .SelectBox.on>div.v2 {
+    font-size: 32px;
+    background-color: #F2F2F2;
+    color: #4C4C4C;
+    border-radius: calc(var(--h) / 2);
+    overflow: visible;
+}
+
+.navTitle[data-select="box"] .SelectBox>div.v2 {
+    width: 110%;
+    right: -160px;
+    left: auto;
+    padding-left: 30px;
+    min-height: 340px;
+}
+
+.navTitle[data-select="box"] .SelectBox>div.v2 .inbox {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 130px;
+    background-color: #fff;
+    border-radius: calc(var(--h) / 2);
+    min-height: 100%;
+}
+
+.navTitle[data-select="box"] .SelectBox>div.v2 .inbox:hover {
+    color: #4C4A4C;
+}
+
+.navTitle[data-select="box"] .SelectBox>div.v2 .inbox li {
+    margin: 5px;
+}
+
+.navTitle[data-select="box"] .SelectBox>div.v2 .inbox li span {
+    display: block;
+    padding: 10px 10px;
+    border-radius: 50px;
+    position: relative;
+    font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 33px;
+    text-align: center;
+}
+
+.navTitle[data-select="box"] .SelectBox>div.v2 .inbox li span.on {
+    display: block;
+    background-color: #B9EAE7;
+    color: #333;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 33px;
+}
+
+.navTitle[data-select="box"] .SelectBox>div.v2 .inbox li span.on:before {
+    content: '';
+    background: url(../images/custom/SelectBox_inbox_on.png) 0 0 no-repeat;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+
+/* '프로젝트 학습' */
+/*
+.lessonList ul:last-child {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+*/
+
+.lessonList ul[btitle=""] {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/* 상단 '이북', '홈' 버튼 감추고, '자료실' 버튼 추가 */
+.iconwrap>div.icon3,
+.iconwrap>div.icon4 {
+    display: none;
+}
+
+.iconwrap>div.archive {
+    background: #27ACB3 0 0 no-repeat;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    display: block;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* ********* */
+.cornerList li.js-listItems {
+    width: 100%;
+    height: 63px;
+    height: auto;
+    padding: 0;
+}
+
+.cornerList li.js-listItems.on {
+    /* background: url(../images/custom/list_on.png) 0 0 no-repeat; */
+}
+
+.cornerList li.js-listItems .list_text {
+    padding: 10px 15px;
+    letter-spacing: -0.5px;
+}
+
+.cornerList li.js-listItems .list_text span:nth-child(1) {
+    display: inline-block;
+    background: url(../images/custom/chasi.png) center bottom no-repeat;
+    width: 141px;
+    height: 46px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 5px;
+}
+
+.cornerList li.js-listItems .list_text span:nth-child(2) {
+    display: inline-block;
+    font-size: 30px;
+    color: #474747;
+    margin-left: 15px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    margin-top: 5px;
+    padding-left: 141px;
+}
+
+.cornerList li.js-listItems:where(.on, .selected, .hover, :hover) .list_text span:nth-child(1) {
+    background: url(../images/custom/chasi.png) center bottom no-repeat;
+    color: #FFF310;
+}
+
+.cornerList li.js-listItems:where(.on, .selected, .hover, :hover) .list_text span:nth-child(2) {
+    color: #097C7C;
+}
+
+
+.cornerList li.js-listItems:where(.on, .selected, .hover, :hover) .list_text:before {
+    color: #333;
+}
+
+.cornerList>li.js-listItems>ul {
+    margin-top: 0;
+}
+
+.cornerList>li.js-listItems>ul>li {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 19px 15px;
+    letter-spacing: -0.5px;
+}
+
+.cornerList>li.js-listItems>ul>li:hover {
+    color: #0087BC;
+}
+
+.cornerList>li.js-listItems>ul>li+li {
+    margin-top: 0;
+}
+
+.cornerList>li.js-listItems>ul>li:before {
+    left: -8px;
+    top: 31px;
+}
+
+.cornerList>li.js-listItems>ul>li:after {
+    content: '';
+    display: block;
+    /* background: url(../images/custom/under.png); */
+    width: 879px;
+    height: 2px;
+    position: absolute;
+    top: 70px;
+    left: -25px;
+}
+
+/* ──────────────────────────────────────────────────────
+* 네비 차시제목 너비 제한
+/* ────────────────────────────────────────────────────── */
+
+nav .navTitle p {
+    max-width: 656px;
+}
+
+/* ──────────────────────────────────────────────────────
+* 5학년 실과 개별수정
+/* ────────────────────────────────────────────────────── */
+.listItems_4_4 .list_text span:nth-child(2) {
+    --li-custom-indent: -34px;
+    padding-right: 42px !important;
+    padding-left: calc(141px - var(--li-custom-indent)) !important;
+    text-indent: var(--li-custom-indent);
+}
+
+/* ──────────────────────────────────────────────────────
+* 프로토용!
+/* ────────────────────────────────────────────────────── */
+
+/* 메뉴 비활성 */
+
+/* DPT1 */
+/* 
+.lesson_wrap ul>li.js-lessonOver+li#L2,
+.lesson_wrap ul>li.js-lessonOver+li#L4,
+.lesson_wrap ul>li.js-lessonOver+li#L5{
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+}
+*/
+
+/* DPT2 */
+/* .cornerList li.js-listItems.listItems_1_2,
+.cornerList li.js-listItems.listItems_1_3,
+.cornerList li.js-listItems.listItems_3_1  */
+
+
+.iconwrap>div.archive{
+    display: none;
+}
+
+.iconwrap>div.icon3, .iconwrap>div.icon4{
+    display: block;
+}
+.iconwrap{
+    width: 120px;
+}
+
+nav{
+    grid-template-columns: 116px auto 340px 120px;
+}

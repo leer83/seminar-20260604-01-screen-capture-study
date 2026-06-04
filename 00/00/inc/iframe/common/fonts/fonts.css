@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* font */
+/* goyang */
+@font-face {font-family:'goyang'; font-style:normal; font-weight:400; src:url('GoyangDeogyang.woff') format('woff'); }
+@font-face {font-family:'goyang'; font-style:normal; font-weight:700; src:url('GoyangDeogyang.woff') format('woff'); }
+
+/* cookie */
+@font-face {font-family:'cookie';font-style:normal; font-weight:400;src:url('CookieRun-Regular.woff') format('woff');}
+@font-face {font-family:'cookie';font-style:normal; font-weight:700;src:url('CookieRun-Bold.woff') format('woff');}
+
+/* maple */
+@font-face {font-family:'maple';font-style:normal; font-weight:400;src:url('Maplestory-Light.woff') format('woff');}
+@font-face {font-family:'maple';font-style:normal; font-weight:700;src:url('Maplestory-Bold.woff') format('woff');}
+
+/* NanumGothicB */
+@font-face {font-family:'nanumg';font-style:normal; font-weight:400;src:url('NanumGothicB.woff') format('woff');}
+@font-face {font-family:'nanumg';font-style:normal; font-weight:700;src:url('NanumGothicEB.woff') format('woff');}
+
+/* NanumSquare */
+@font-face {font-family:'nanums';font-style:normal; font-weight:400;src:url('NanumSquareR.woff') format('woff');}
+@font-face {font-family:'nanums';font-style:normal; font-weight:700;src:url('NanumSquareR.woff') format('woff');}
+
+@font-face {font-family:'nanumsqbold';font-style:normal; font-weight:700;src:url('NanumSquareB.woff') format('woff');}
+
+/* NanumSquareRoundB */
+/* @font-face {font-family:'nanums';font-style:normal; font-weight:400;src:url('NanumSquareRoundB.woff') format('woff');} */
+
+/* Jalnan */
+@font-face {font-family:'jalnan';font-style:normal; font-weight:400;src:url('Jalnan.woff') format('woff');}
+
+/* BaskinB */
+@font-face {font-family:'baskin';font-style:normal; font-weight:400;src:url('BaskinR.woff') format('woff');}
+@font-face {font-family:'baskin';font-style:normal; font-weight:700;src:url('BaskinB.woff') format('woff');}
+
+/* Katuri */
+@font-face {font-family: 'Katuri';src: url('Katuri.woff') format('woff');font-weight: normal;font-style: normal;}
+
+/* kpupdotum */
+@font-face {font-family: 'kopup';src: url('KoPubDotumBold.woff') format('woff');font-weight: normal;font-style: normal;}
+
+/* bmjua */
+@font-face {font-family: 'bmjua';src: url('BMJUA.woff') format('woff');font-weight: normal;font-style: normal;}
+
+/* 학교안심나들이 */
+@font-face {font-family: 'han';src: url('HakgyoansimNadeuriTTF-B.woff2') format('woff2');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'han';src: url('Hakgyoansim-Nadeuri-TTF-L.woff') format('woff');font-weight: 400;font-style: normal;}
+
+/* Binggrae */
+@font-face {font-family:'Binggrae';font-style:normal; font-weight:400;src:url('Binggrae.woff') format('woff');}
+@font-face {font-family:'Binggrae';font-style:normal; font-weight:700;src:url('BinggraeB.woff') format('woff');}
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+.jalnan,
+.font_jalnan{
+    font-family: 'jalnan' !important;
+}
+
+.baskin,
+.font_baskin{
+    font-family: 'baskin' !important;
+}
+
+.nanums,
+.font_nanums{
+    font-family: 'nanums' !important;
+}
+
+.nanumsqbold,
+.font_nanumsqbold{
+    font-family: 'nanumsqbold' !important;
+}
+
+.nanumg,
+.font_nanumg{
+    font-family: 'nanumg' !important;
+}
+
+.maple,
+.font_maple{
+    font-family: 'maple' !important;
+}
+
+.cookie,
+.font_cookie{
+    font-family: 'cookie' !important;
+}
+
+.goyang,
+.font_goyang{
+    font-family: 'goyang' !important;
+}
+
+.recipe,
+.font_recipe {
+    font-family:'Recipekorea' !important;
+}
+
+.katuri,
+.font_katuri {
+    font-family:'Katuri' !important;
+}
+
+.kopup,
+.font_kopup {
+    font-family:'kopup' !important;
+}
+
+.bmjua,
+.font_bmjua {
+    font-family:'bmjua' !important;
+}
+
+.han,
+.font_han {
+    font-family:'han' !important;
+}
+
+.hanL,
+.font_hanL {
+    font-family:'han' !important;
+    font-weight: 400 !important;
+}
+
+.bing{
+    font-family:'Binggrae' !important;
+    font-weight: 700;
+}
